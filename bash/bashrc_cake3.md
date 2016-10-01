@@ -1,3 +1,4 @@
+```bash
 # Put this in your ~/.bashrc_cake3 then the next 2 lines uncommented in your .bashrc
 # eval HOME="~"
 # . "${HOME}/.bashrc_cake3"
@@ -56,3 +57,4 @@ function cake3_plugin_phpunit() {
 
 	return $?
 }
+```
