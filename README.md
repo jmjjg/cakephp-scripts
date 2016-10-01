@@ -4,7 +4,10 @@ Various scripts for CakePHP 3.x
 
 ## bash
 
+### CakePHP 3.x
+
 Bash functions to work with CakePHP 3.x plugins
+Put bash/basrc_cake3.md's content in ~/.basrc_cake3.
 
 - cake3_check
 - cake3_clear
@@ -12,7 +15,20 @@ Bash functions to work with CakePHP 3.x plugins
 - cake3_plugin_build *plugin name*
 - cake3_plugin_quality *plugin name*
 
-## Cake 3 plugin jenkins files template
+### Slackware development machine
+
+Manage Apache, Mysql, PostgreSQL, ... servers in one command
+Put bash/basrc_webserver.md's content in ~/.basrc_webserver.
+
+- webserver
+- webserver_chmod
+- webserver_restart
+- webserver_start
+- webserver_stop
+
+## Jenkins
+
+### Cake 3.x plugin jenkins files template
 
 Copy the files in jenkins/cake3_plugin in your plugin's vendor/Jenkins directory.
 
