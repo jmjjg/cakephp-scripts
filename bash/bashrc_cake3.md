@@ -5,7 +5,7 @@
 
 # Check for a CakePHP 3.x install
 function cake3_check() {
-	echo "Checking for a CakePHP 3 install" && \
+	echo "Checking for a CakePHP 3.x install" && \
 		grep "^3\.[0-9]\+" vendor/cakephp/cakephp/VERSION.txt
 
 	return $?
