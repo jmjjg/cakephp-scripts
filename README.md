@@ -1,6 +1,6 @@
 # cakephp-scripts
 
-Various scripts for CakePHP 3.x
+Various scripts and templates for CakePHP 3.x
 
 ## bash
 
@@ -37,10 +37,30 @@ You have to replace the word "cake3_plugin" with your plugin name in the files a
 Change the hard-coded custom workspace path "/var/www/htdocs/cakephp/3.2.x/3.2.2"
 in the jobs/build.xml and jobs/quality.xml.
 
+Replace "<cake3_plugin>" with your plugin name in the lines below.
+
 ```bash
-cake3_plugin_phpunit Translator
+cake3_plugin_phpunit <cake3_plugin>
 
 wget http://localhost:8080/jnlpJars/jenkins-cli.jar
-/usr/lib/java/bin/java -jar jenkins-cli.jar -s http://localhost:8080/ create-job "CakePHP 3 Plugin Translator" < "plugins/Translator/vendor/Jenkins/jobs/build.xml"
-/usr/lib/java/bin/java -jar jenkins-cli.jar -s http://localhost:8080/ create-job "CakePHP 3 Plugin Translator Quality" < "plugins/Translator/vendor/Jenkins/jobs/quality.xml"
+/usr/lib/java/bin/java -jar jenkins-cli.jar -s http://localhost:8080/ create-job "CakePHP 3 Plugin <cake3_plugin>" < "plugins/<cake3_plugin>/vendor/Jenkins/jobs/build.xml"
+/usr/lib/java/bin/java -jar jenkins-cli.jar -s http://localhost:8080/ create-job "CakePHP 3 Plugin <cake3_plugin> Quality" < "plugins/<cake3_plugin>/vendor/Jenkins/jobs/quality.xml"
 ```
+
+## Netbeans
+
+### Cake 3.x netbeans template
+
+#### Install
+
+```bash
+~/.netbeans/<version>/config/Templates/CakePHP/v. 3.x.x/
+```
+
+Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove the
+3 assign lines (author, license, namespace).
+
+#### @see
+- http://freemarker.sourceforge.net/docs/dgui_template_exp.html#dgui_template_exp_stringop_interpolation
+- http://freemarker.sourceforge.net/docs/ref_builtins_string.html
+- http://wiki.netbeans.org/FaqFreeMarker
