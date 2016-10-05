@@ -57,6 +57,17 @@ wget http://localhost:8080/jnlpJars/jenkins-cli.jar
 ~/.netbeans/<version>/config/Templates/CakePHP/v. 3.x.x/
 ```
 
+Edit `~/.netbeans/8.0.2/config/Templates/CakePHP/.nbattrs` and add:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="v. 3.x.x">
+        <attr name="displayName" stringvalue="v. 3.x.x"/>
+    </fileobject>
+</attributes>
+```
+
 Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove the
 3 assign lines (author, license, namespace).
 
