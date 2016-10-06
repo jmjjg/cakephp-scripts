@@ -53,11 +53,6 @@ wget http://localhost:8080/jnlpJars/jenkins-cli.jar
 
 #### Install
 
-@see http://wiki.netbeans.org/FaqFreeMarker
-@see http://wiki.netbeans.org/FaqTemplateVariables
-@see http://freemarker.org/docs/
-@see http://freemarker.org/docs/ref_directives.html
-
 ```bash
 ~/.netbeans/<version>/config/Templates/CakePHP/v. 3.x.x/
 ```
@@ -80,3 +75,6 @@ Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove t
 - http://freemarker.sourceforge.net/docs/dgui_template_exp.html#dgui_template_exp_stringop_interpolation
 - http://freemarker.sourceforge.net/docs/ref_builtins_string.html
 - http://wiki.netbeans.org/FaqFreeMarker
+- http://wiki.netbeans.org/FaqTemplateVariables
+- http://freemarker.org/docs/
+- http://freemarker.org/docs/ref_directives.html
