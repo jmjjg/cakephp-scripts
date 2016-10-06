@@ -53,6 +53,11 @@ wget http://localhost:8080/jnlpJars/jenkins-cli.jar
 
 #### Install
 
+@see http://wiki.netbeans.org/FaqFreeMarker
+@see http://wiki.netbeans.org/FaqTemplateVariables
+@see http://freemarker.org/docs/
+@see http://freemarker.org/docs/ref_directives.html
+
 ```bash
 ~/.netbeans/<version>/config/Templates/CakePHP/v. 3.x.x/
 ```
