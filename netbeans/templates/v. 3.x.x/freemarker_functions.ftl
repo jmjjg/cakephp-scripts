@@ -7,9 +7,13 @@
 </#function>
 
 <#function table name>
-	<#return underscore(name?replace("(.*)Table", "$1", "r"))>
+	<#return underscore(original_classname(name))>
 </#function>
 
 <#function foreign_key name>
   <#return underscore(name) + '_id'>
+</#function>
+
+<#function original_classname name>
+	<#return name?replace("(.*)(Fixture|TableTest|Table)", "$1", "r")>
 </#function>
