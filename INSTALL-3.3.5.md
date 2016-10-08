@@ -51,15 +51,17 @@ cd 3.3.5
 php ../composer.phar update
 
 php ../composer.phar require --dev \
-"phpunit/phpunit" \
-"cakephp/cakephp-codesniffer" \
-"phploc/phploc" \
-"phpmd/phpmd" \
-"sebastian/phpcpd"
-
-php ../composer.phar dump-autoload
-
-vendor/bin/phpcs --config-set installed_paths vendor/cakephp/cakephp-codesniffer
+	"phpunit/phpunit" \
+	"cakephp/cakephp-codesniffer" \
+	"phploc/phploc" \
+	"phpmd/phpmd" \
+	"sebastian/phpcpd" \
+	"wimg/php-compatibility" && \
+	php ../composer.phar dump-autoload && \
+	mv vendor/wimg/php-compatibility/ vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility && \
+	vendor/bin/phpcs --config-set installed_paths vendor/squizlabs/php_codesniffer/CodeSniffer/Standards,vendor/cakephp/cakephp-codesniffer && \
+	cp -r /var/www/htdocs/cakephp/scripts/jenkins/cake3_app/* . && \
+	cake3_clear ; ant quality
 ```
 
 == config/bootstrap.php
