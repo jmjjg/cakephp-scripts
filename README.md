@@ -7,7 +7,7 @@ Various scripts and templates for CakePHP 3.x
 ### CakePHP 3.x
 
 Bash functions to work with CakePHP 3.x plugins
-Put bash/basrc_cake3.md's content in ~/.basrc_cake3.
+Put bash/bashrc_cake3.md's content in ~/.bashrc_cake3.
 
 - cake3_check
 - cake3_clear
@@ -15,10 +15,17 @@ Put bash/basrc_cake3.md's content in ~/.basrc_cake3.
 - cake3_plugin_build *plugin name*
 - cake3_plugin_quality *plugin name*
 
+### SVN
+
+Manage Apache, Mysql, PostgreSQL, ... servers in one command
+Put bash/bashrc_svn.md's content in ~/.bashrc_svn.
+
+- svnbackup
+
 ### Slackware development machine
 
 Manage Apache, Mysql, PostgreSQL, ... servers in one command
-Put bash/basrc_webserver.md's content in ~/.basrc_webserver.
+Put bash/bashrc_webserver_slackware.md's content in ~/.bashrc_webserver_slackware.
 
 - webserver
 - webserver_chmod
