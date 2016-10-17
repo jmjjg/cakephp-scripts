@@ -85,3 +85,9 @@ Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove t
 - http://wiki.netbeans.org/FaqTemplateVariables
 - http://freemarker.org/docs/
 - http://freemarker.org/docs/ref_directives.html
+
+## PHPCheckStyle
+
+### Classes/AppUses sniff
+Checks that every extended class get an App::uses call for it.
+Currently only accepts one class per file.
