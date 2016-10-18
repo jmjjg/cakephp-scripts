@@ -89,4 +89,6 @@ Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove t
 ## phpcs/Cake2CodesnifferParanoid
 
 ### Classes/AppUses sniff for CakePHP 2.x
-Checks that every extended class get an App::uses call for it.
+Checks that every extended class get an App::uses call for it, except when
+extending previously defined classes in the file or classes defined by the SPL or
+the Exception class.
