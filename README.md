@@ -1,6 +1,6 @@
 # cakephp-scripts
 
-Various scripts and templates for CakePHP 3.x
+Various scripts and templates for CakePHP 2.x and 3.x
 
 ## bash
 
@@ -88,6 +88,5 @@ Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove t
 
 ## PHPCheckStyle
 
-### Classes/AppUses sniff
+### Classes/AppUses sniff for CakePHP 2.x
 Checks that every extended class get an App::uses call for it.
-Currently only accepts one class per file.
