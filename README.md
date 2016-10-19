@@ -86,7 +86,7 @@ Edit `netbeans/templates/v. 3.x.x/freemarker_functions.ftl` and fill or remove t
 - http://freemarker.org/docs/
 - http://freemarker.org/docs/ref_directives.html
 
-## phpcs/Cake2CodesnifferParanoid
+## phpcs/Standards/Cake2CodesnifferParanoid
 
 ### Classes/AppUses sniff for CakePHP 2.x
 Checks that every extended class get an App::uses call for it, except when
