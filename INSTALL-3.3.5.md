@@ -1,4 +1,4 @@
-= CakePHP 3.3.x
+# CakePHP 3.3.x
 
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -19,7 +19,7 @@ git clone https://github.com/jmjjg/cakephp-translator 3.3.5/plugins/Translator
 cd 3.3.5
 ```
 
-== composer.json
+## composer.json
 
 ```json
 {
@@ -64,7 +64,7 @@ php ../composer.phar require --dev \
 	cake3_clear ; ant quality
 ```
 
-== config/bootstrap.php
+## config/bootstrap.php
 
 ```php
 Plugin::load('Database');
@@ -73,13 +73,13 @@ Plugin::load('Postgres', ['bootstrap' => true]);
 Plugin::load('Translator', ['bootstrap' => true]);
 ```
 
-== config/app.php
+## config/app.php
 
 ```php
 'driver' => 'Postgres\Database\Driver\Postgres'
 ```
 
-== @todo
+## @todo
 
 ```bash
 cake3_plugin_phpunit Database
